@@ -1,0 +1,90 @@
+.nav_container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 6rem;
+    margin-right: 20rem;
+
+    .nav_link {
+        margin-right: 6rem;
+        height: 19px;
+        font-family: 'Avenir LT Std';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    .nav_signUp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 112px;
+        height: 44px;
+        margin-right: 1rem;
+
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+
+        a {
+            text-decoration: none;
+            width: 57px;
+            height: 19px;
+
+            font-family: 'Avenir LT Std';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+    }
+
+    .nav_logIn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 112px;
+        height: 44px;
+
+        background: #106580;
+        border-radius: 5px;
+
+        a {
+            text-decoration: none;
+            width: 45px;
+            height: 19px;
+            font-family: 'Avenir LT Std';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+    }
+}
