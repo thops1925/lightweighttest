@@ -1,34 +1,4 @@
 .App {
-  height: 100vh;
-  background: url('./assets/image.png') no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.shadow_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .left_shadow {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 731px;
-    height: 100vh;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 85%);
-  }
-
-  .right_shadow {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 961px;
-    height: 100vh;
-
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 85%);
-    transform: rotate(180deg);
-  }
+  width: 100vw;
+  background: #1A1A1A;
 }

@@ -1,7 +1,132 @@
 .home_container {
+    height: 100vh;
+    background: url('../../assets/image.png') no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+// .shadow_container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     .left_shadow {
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: flex-start;
+//         width: 731px;
+//         height: 100vh;
+//         background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 85%);
+//     }
+
+//     .right_shadow {
+//         display: flex;
+//         justify-content: flex-end;
+//         align-items: flex-end;
+//         width: 961px;
+//         height: 100vh;
+
+//         background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 85%);
+//         transform: rotate(180deg);
+//     }
+// }
+
+.home_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.home_title {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1A1A1A;
-    height: 100vh;
+    width: 629px;
+    height: 101px;
+    margin: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 101px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.home_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 622px;
+    height: 89px;
+    left: 90px;
+    top: 513px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.home_category_desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 291px;
+    height: 15px;
+    left: 152px;
+    top: 474px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+
+}
+
+.home_container-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.home_watch_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 44px;
+    left: 91px;
+    top: 612px;
+
+    background: #106580;
+    border-radius: 5px;
+}
+
+.home_button {
+    width: 89px;
+    height: 19px;
+    left: 134px;
+    top: 626px;
+
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
 }
