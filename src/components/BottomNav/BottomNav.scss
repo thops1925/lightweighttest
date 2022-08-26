@@ -1,0 +1,61 @@
+.bottom_nav_container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.bottom_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.bottom_nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+
+.bottom_nav_item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 18px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: #106580;
+        text-decoration-thickness: 3px;
+    }
+
+}
+
+.bottom_nav_item-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem;
+
+    svg {
+        width: 50px;
+        height: 20px;
+    }
+}
