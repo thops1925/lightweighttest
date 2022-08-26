@@ -4,7 +4,7 @@ import { homeContent } from '../../constant'
 import { BottomNav } from '../../components'
 const Home = () => {
     return (
-        <section id='home' className='home_container'>
+        <section id='Home' className='home_container'>
             <div className='shadow_container'>
                 <div className='left_shadow' >
                     <div className='home_container-title'>

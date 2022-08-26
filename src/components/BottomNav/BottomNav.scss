@@ -37,10 +37,11 @@
     font-size: 14px;
     line-height: 18px;
 
-    color: #FFFFFF;
+    color: gray;
     text-decoration: none;
 
     &:hover {
+        color: #FFFFFF;
         text-decoration: underline;
         text-decoration-color: #106580;
         text-decoration-thickness: 3px;
@@ -53,9 +54,12 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 6rem;
+}
+
+.animation {
 
     svg {
-        width: 50px;
+        width: 30px;
         height: 20px;
     }
 }

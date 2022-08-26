@@ -164,3 +164,12 @@
 
     color: #FFFFFF;
 }
+
+.bottom_nav_home {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: #106580;
+    border-radius: 5px;
+}
