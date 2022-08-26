@@ -15,6 +15,7 @@ const Discover = () => {
                     <div className='discover_item'>
                         <div className='discover_item-image'>
                             <img src={item.image} alt={item.title} />
+                            <div className='discovery_shadow' />
                             <div className='discover_item-title'>
                                 <h3>{item.title}</h3>
                                 <p>{item.category}</p>
