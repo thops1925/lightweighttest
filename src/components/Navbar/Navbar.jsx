@@ -4,9 +4,11 @@ import './Navbar.scss'
 const Navbar = () => {
     return (
         <nav className='nav_container'>
-            <a href='#Home'>
-                AnimeBinge
-            </a>
+            <div className='nav_title'>
+                <a href='#Home'>
+                    AnimeBinge
+                </a>
+            </div>
             <div className='nav_list'>
                 {['Home', 'Discover', 'About Us'].map((item) => (
                     <>

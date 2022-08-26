@@ -44,7 +44,7 @@
     align-items: center;
     flex-direction: row;
     list-style: none;
-    overflow: hidden;
+    // overflow: hidden;
     // position: relative;
     padding: 0rem 6rem;
 
@@ -52,15 +52,19 @@
 }
 
 .discover_item {
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // overflow-x: hidden;
 
 }
 
 .discover_item-image {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+    // width: 100%;
+    padding-left: 1rem;
 }
 
 .discover_item-title {
@@ -69,6 +73,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 1rem 2rem;
 
 
     h3 {

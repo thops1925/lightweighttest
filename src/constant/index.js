@@ -16,19 +16,7 @@ const trending = [
         category: 'Category: Adventure fiction,  Martial Arts',
         image: image10,
     },
-    {
-        title: 'Jujutsu Kaisen',
-        category: 'Category: Adventure fiction,  Martial Arts',
-        image: image10,
-    }, {
-        title: 'Jujutsu Kaisen',
-        category: 'Category: Adventure fiction,  Martial Arts',
-        image: image10,
-    }, {
-        title: 'Jujutsu Kaisen',
-        category: 'Category: Adventure fiction,  Martial Arts',
-        image: image10,
-    },
+
     {
         title: 'One Piece',
         category: 'Category: Adventure fiction, Comedy, Family',
