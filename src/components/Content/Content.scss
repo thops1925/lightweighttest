@@ -1,0 +1,102 @@
+.discover_grid_selected {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 6rem;
+}
+
+.discover_item_selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.discover_item-image_selected {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+
+    img {
+        overflow: hidden;
+        width: 516px;
+        height: 621px;
+        object-fit: cover;
+    }
+}
+
+.discover_item-title_selected {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #747474;
+
+    }
+}
+
+.discover_item-rating_selected {
+    position: absolute;
+    display: flex;
+    left: 30rem;
+    bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+
+
+    svg {
+        margin-right: 25px;
+    }
+
+    p {
+        width: 18px;
+        height: 15px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #FFFFFF;
+    }
+}
+
+.discovery_shadow_selected {
+    position: absolute;
+    width: 516px;
+    height: 291px;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.421875) 45.83%, #000000 100%);
+    border-radius: 21px;
+}

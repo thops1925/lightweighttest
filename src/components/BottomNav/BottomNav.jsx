@@ -17,8 +17,8 @@ const scaleVariants = {
 const BottomNav = () => (
     <div className='bottom_nav_container'>
         <div className='bottom_nav' >
-            {['Overview', 'Episode', 'Details'].map(item => (
-                <div className='bottom_nav_item'>
+            {['Overview', 'Episode', 'Details'].map((item, index) => (
+                <div key={index} className='bottom_nav_item'>
                     <a href={`#${item}`} className='bottom_nav_item-title'>{item}</a>
                 </div>
             ))}

@@ -1,0 +1,19 @@
+.throwback_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+
+.throwback_item {
+    padding-left: 1rem;
+}
+
+.throwback_item-image {
+    box-sizing: border-box;
+    width: 409px;
+    height: 427px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+}

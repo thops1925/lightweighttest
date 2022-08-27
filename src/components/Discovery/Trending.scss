@@ -1,0 +1,97 @@
+.discover_grid {
+    display: flex;
+    align-items: center;
+    padding: 0rem 6rem;
+}
+
+.discover_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.discover_item-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 1rem;
+
+    img {
+        overflow: hidden;
+    }
+}
+
+.discover_item-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #747474;
+
+    }
+}
+
+.discover_item-rating {
+    position: absolute;
+    display: flex;
+    left: 30rem;
+    bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+
+
+    svg {
+        margin-right: 25px;
+    }
+
+    p {
+        width: 18px;
+        height: 15px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #FFFFFF;
+    }
+}
+
+.discovery_shadow {
+    position: absolute;
+    width: 516px;
+    height: 291px;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.421875) 45.83%, #000000 100%);
+    border-radius: 21px;
+}

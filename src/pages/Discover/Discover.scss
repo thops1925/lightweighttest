@@ -1,17 +1,17 @@
 .discover_container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
+    width: 100vw;
+
 }
 
 .discover_header {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 2rem 6rem;
-
-
+    padding: 0rem 6rem;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 700;
@@ -24,7 +24,6 @@
     h2 {
         width: 292px;
         height: 43px;
-
         font-family: 'Outfit';
         font-style: normal;
         font-weight: 700;
@@ -36,76 +35,4 @@
     span {
         color: #FBC94A;
     }
-}
-
-.discover_grid {
-    display: flex;
-    justify-content: row;
-    align-items: center;
-    flex-direction: row;
-    list-style: none;
-    // overflow: hidden;
-    // position: relative;
-    padding: 0rem 6rem;
-
-
-}
-
-.discover_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // overflow-x: hidden;
-
-}
-
-.discover_item-image {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    // width: 100%;
-    padding-left: 1rem;
-}
-
-.discover_item-title {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-
-
-    h3 {
-        margin: 0;
-        padding: 0;
-        font-family: 'Outfit';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 30px;
-        color: #FFFFFF;
-    }
-
-    p {
-        margin: 0;
-        padding: 0;
-        font-family: 'Outfit';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-
-        color: #747474;
-
-    }
-}
-
-.discovery_shadow {
-    position: absolute;
-    width: 516px;
-    height: 291px;
-
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.421875) 45.83%, #000000 100%);
-    border-radius: 21px;
 }

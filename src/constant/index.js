@@ -1,4 +1,4 @@
-import { image10, image11, image9 } from "../assets"
+import { image10, image11, image24, image25, image26, image9, titan1, titan10, titan11, titan3, titan4, titan5, titan6, titan7, titan8, titan9 } from "../assets"
 
 const homeContent = {
     title: 'Kimetsu no Yaiba',
@@ -10,19 +10,25 @@ const trending = [
     {
         title: 'Attack On Titan',
         category: 'Category: Adventure fiction, Dark fantasy, Martial Arts',
-        image: image9,
+        image: [image9, titan1, titan3, titan4, titan5, titan6, titan7, titan8, titan9, titan10, titan11],
+        rating: ' 5.0',
     }, {
         title: 'Jujutsu Kaisen',
         category: 'Category: Adventure fiction,  Martial Arts',
-        image: image10,
+        image: [image10],
+        rating: ' 5.0',
+
     },
+
 
     {
         title: 'One Piece',
         category: 'Category: Adventure fiction, Comedy, Family',
-        image: image11,
+        image: [image11],
+        rating: ' 5.0',
 
     }
 ]
 
-export { homeContent, trending }
+const throwback = [image24, image25, image25, image26]
+export { homeContent, trending, throwback }
