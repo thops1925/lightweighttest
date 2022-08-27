@@ -14,7 +14,6 @@ const Navbar = () => {
                         <a href={`#${item}`} key={item} className='nav_link'>{item}</a>
                     </div>
                 ))}
-
                 <div className='nav_signUp'><a href='#signUp'>Sign Up</a> </div>
                 <div className='nav_logIn'><a href='#login'>Log In</a></div>
             </div>

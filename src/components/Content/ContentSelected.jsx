@@ -7,8 +7,6 @@ const ContentSelected = ({ trendingData }) => {
     const { episode } = selectedEpisode
     const [{ image }] = episode
     const [counter, setCounter] = useState(0);
-
-
     useEffect(() => {
         const myInterval = setInterval(() => {
             setCounter(() => counter + 1);
@@ -16,9 +14,6 @@ const ContentSelected = ({ trendingData }) => {
         if (counter >= image.length) setCounter(0);
         return () => clearInterval(myInterval);
     }, [counter, image.length])
-
-
-
     return (
         <section className='selected_container'>
 
@@ -48,7 +43,6 @@ const ContentSelected = ({ trendingData }) => {
                         {selectedEpisode.description}
                     </div>)}
             </div>
-
             <div className='episode_container'>
                 {trendingData.title === selectedEpisode.title && [selectedEpisode].map((item, index) => (
                     <div key={index} className='episode_header'>
@@ -74,8 +68,6 @@ const ContentSelected = ({ trendingData }) => {
                 ))}
             </div>
         </section>
-
     )
 }
-
 export default ContentSelected

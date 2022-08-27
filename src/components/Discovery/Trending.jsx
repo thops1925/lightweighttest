@@ -3,19 +3,13 @@ import ContentSelected from '../Content/ContentSelected';
 import './Trending.scss'
 const Trending = ({ data }) => {
     const [trendingData, setTrendingData] = useState([]);
-    const [open, setOpen] = useState(true);
-
-    const selectTrendingData = (item) => {
-        setTrendingData(item);
-    };
-
-    const slideOpen = () => {
-        setOpen(!open);
-    };
+    const [open, setOpen] = useState(true)
+    const selectTrendingData = (item) => setTrendingData(item);
+    const slideOpen = () => setOpen(!open);
     return (
         <section className='discover_grid'>
             {open ? (
-                <>
+                <div>
                     {data.map((item, index) => (
                         <div key={index} onClick={() => selectTrendingData(item)} className='discover_item'>
                             <div onClick={slideOpen} className='discover_item-image'>
@@ -34,16 +28,11 @@ const Trending = ({ data }) => {
 
                             </div>
                         </div>
-
-
                     ))
                     }
-                </>
+                </div>
             ) : <ContentSelected trendingData={trendingData} />}
-
-
         </section >
-
     )
 }
 
