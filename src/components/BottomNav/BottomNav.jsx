@@ -14,6 +14,8 @@ const scaleVariants = {
     },
 };
 
+
+
 const BottomNav = () => (
     <div className='bottom_nav_container'>
         <div className='bottom_nav' >

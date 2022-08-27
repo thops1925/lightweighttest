@@ -5,7 +5,7 @@ import './Content.scss'
 const ContentSelected = ({ trendingData }) => {
     console.log(selectedEpisode)
     return (
-        <section id='Episode' className='selected_container'>
+        <section className='selected_container'>
 
             <div className='discover_grid_selected_selected'>
                 {[trendingData].map((item, index) => (

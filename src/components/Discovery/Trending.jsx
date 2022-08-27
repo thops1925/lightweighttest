@@ -13,7 +13,7 @@ const Trending = ({ data }) => {
         setOpen(!open);
     };
     return (
-        <section id='Overview' className='discover_grid'>
+        <section className='discover_grid'>
             {open ? (
                 <>
                     {data.map((item, index) => (
