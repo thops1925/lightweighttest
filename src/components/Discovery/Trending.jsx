@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ContentSelected from '../Content/ContentSelected';
 import './Trending.scss'
+import { motion } from 'framer-motion'
 const Trending = ({ data }) => {
     const [trendingData, setTrendingData] = useState([]);
     const [open, setOpen] = useState(true)
@@ -11,7 +12,8 @@ const Trending = ({ data }) => {
             {open ? (
                 <>
                     {data.map((item, index) => (
-                        <div key={index} onClick={() => selectTrendingData(item)} className='discover_item'>
+                        <motion.div whileInView={{ opacity: [0, 1] }}
+                            transition={{ duration: 0.5 }} key={index} onClick={() => selectTrendingData(item)} className='discover_item'>
                             <div onClick={slideOpen} className='discover_item-image'>
                                 <img src={item.image[0]} alt={item.title} />
                                 <div className='discovery_shadow' />
@@ -27,7 +29,7 @@ const Trending = ({ data }) => {
                                 </div>
 
                             </div>
-                        </div>
+                        </motion.div>
                     ))
                     }
                 </>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { selectedEpisode } from '../../constant'
 import './Content.scss'
+import { motion } from 'framer-motion'
 
 const ContentSelected = ({ trendingData }) => {
     const { episode } = selectedEpisode
@@ -17,7 +18,8 @@ const ContentSelected = ({ trendingData }) => {
         <section className='selected_container'>
             <div className='discover_grid_selected_selected'>
                 {[trendingData].map((item, index) => (
-                    <div key={index} className='discover_item_selected'>
+                    <motion.div whileInView={{ opacity: [0, 1] }}
+                        transition={{ duration: 0.5 }} key={index} className='discover_item_selected'>
                         <div className='discover_item-image_selected'>
                             <img src={item.image[0]} alt={item.title} />
                             <div className='discovery_shadow_selected' />
@@ -32,7 +34,7 @@ const ContentSelected = ({ trendingData }) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
                 {trendingData.title === selectedEpisode.title && (
                     <div className='discover_selected-description'>
@@ -41,7 +43,8 @@ const ContentSelected = ({ trendingData }) => {
             </div>
             <div className='episode_container'>
                 {trendingData.title === selectedEpisode.title && [selectedEpisode].map((item, index) => (
-                    <div key={index} className='episode_header'>
+                    <motion.div whileInView={{ opacity: [0, 1] }}
+                        transition={{ duration: 0.5 }} key={index} className='episode_header'>
                         <div className='episode_title'>
                             <p className='episode_title-header'>Episode</p>
                             <p className='episode_title-header-tile'>{item.title}</p>
@@ -60,7 +63,7 @@ const ContentSelected = ({ trendingData }) => {
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>
