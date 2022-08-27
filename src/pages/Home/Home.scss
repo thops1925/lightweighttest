@@ -139,6 +139,9 @@
 }
 
 .home_watch_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -173,4 +176,23 @@
     align-items: flex-end;
     background: #106580;
     border-radius: 5px;
+}
+
+.watch_heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 48px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+.watch_flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
