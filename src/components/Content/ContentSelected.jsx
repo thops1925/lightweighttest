@@ -10,12 +10,15 @@ const ContentSelected = ({ trendingData }) => {
 
 
     useEffect(() => {
-        setInterval(() => {
-            setCounter(counter + 1);
+        const myInterval = setInterval(() => {
+            setCounter(() => counter + 1);
         }, 2000)
         if (counter >= image.length) setCounter(0);
-        return () => clearInterval(counter);
+        return () => clearInterval(myInterval);
     }, [counter, image.length])
+
+
+    console.log(counter)
 
     return (
         <section className='selected_container'>
