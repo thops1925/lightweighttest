@@ -4,7 +4,6 @@ import Throwback from '../../components/Throwback/Throwback'
 import './Discover.scss'
 import { trending } from '../../constant'
 
-
 const Discover = () => {
 
     return (

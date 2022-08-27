@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ContentSelected from '../Content/ContentSelected';
 import './Trending.scss'
 import { motion } from 'framer-motion'
+
 const Trending = ({ data }) => {
     const [trendingData, setTrendingData] = useState([]);
     const [open, setOpen] = useState(true)

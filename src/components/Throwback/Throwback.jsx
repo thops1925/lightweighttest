@@ -8,7 +8,6 @@ const Throwback = () => (
             <div key={index} className='throwback_item'>
                 <div className='throwback_item-image'>
                     <img src={item} alt={item} />
-
                 </div>
             </div>
         ))}

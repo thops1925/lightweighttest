@@ -1,6 +1,7 @@
 import React from 'react'
 import './BottomNav.scss'
 import { motion } from 'framer-motion';
+
 const scaleVariants = {
     whileInView: {
         scale: [0, 1],
@@ -11,6 +12,7 @@ const scaleVariants = {
         },
     },
 };
+
 const BottomNav = () => (
     <div className='bottom_nav_container'>
         <div className='bottom_nav' >
@@ -23,7 +25,6 @@ const BottomNav = () => (
         <motion.div variants={scaleVariants}
             whileInView={scaleVariants.whileInView}
             className='bottom_nav_item-right'>
-
             <svg width="222" height="15" viewBox="0 0 122 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="7.5" y1="7.5" x2="114.5" y2="7.50001" stroke="#106580" stroke-width="15" stroke-linecap="round" />
             </svg>

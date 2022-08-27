@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.scss'
 import { homeContent } from '../../constant'
 import { BottomNav } from '../../components'
+
 const Home = () => {
     return (
         <section id='Home' className='home_container'>
@@ -9,9 +10,7 @@ const Home = () => {
                 <div className='left_shadow' >
                     <div className='home_container-title'>
                         <div className='home_content'>
-                            <h2 className='home_title'>
-                                {homeContent.title}
-                            </h2>
+                            <h2 className='home_title'>{homeContent.title}</h2>
                             <div className='home_category_desc'>
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.5 15.9775L4.32867 19.432L5.7068 12.495L0.513672 7.693L7.5373 6.86L10.5 0.4375L13.4628 6.86L20.4864 7.693L15.2933 12.495L16.6714 19.432L10.5 15.9775Z" fill="#FBC94A" />
@@ -19,7 +18,6 @@ const Home = () => {
                                 <span>5.0</span>
                                 <p>{homeContent.category}</p>
                             </div>
-
                             <p className='category_desc'>{homeContent.description}</p>
                             <div className='home_category'>
                             </div>

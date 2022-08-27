@@ -54,7 +54,6 @@ const ContentSelected = ({ trendingData }) => {
                                 <div key={index} className='epi_container'>
                                     <div className='epi_image'>
                                         <img src={epi.image[counter]} alt={epi.title} />
-
                                     </div>
                                     <div className='epi_text'>
                                         <p className='epi_title'>{epi.title}</p>
