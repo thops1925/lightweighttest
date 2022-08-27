@@ -17,6 +17,9 @@ const ContentSelected = ({ trendingData }) => {
             setCounter(0);
         }
 
+        return () => {
+            clearInterval(counter);
+        }
     }, [counter, image.length])
 
     return (
