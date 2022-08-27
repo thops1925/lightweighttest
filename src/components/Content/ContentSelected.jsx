@@ -12,14 +12,9 @@ const ContentSelected = ({ trendingData }) => {
     useEffect(() => {
         setInterval(() => {
             setCounter(counter + 1);
-        }, 2000)
-        if (counter >= image.length) {
-            setCounter(0);
-        }
-
-        return () => {
-            clearInterval(counter);
-        }
+        }, 3000)
+        if (counter >= image.length) setCounter(0);
+        return () => clearInterval(counter);
     }, [counter, image.length])
 
     return (
