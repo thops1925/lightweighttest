@@ -9,7 +9,7 @@ const Trending = ({ data }) => {
     return (
         <section className='discover_grid'>
             {open ? (
-                <div>
+                <>
                     {data.map((item, index) => (
                         <div key={index} onClick={() => selectTrendingData(item)} className='discover_item'>
                             <div onClick={slideOpen} className='discover_item-image'>
@@ -30,7 +30,7 @@ const Trending = ({ data }) => {
                         </div>
                     ))
                     }
-                </div>
+                </>
             ) : <ContentSelected trendingData={trendingData} />}
         </section >
     )
