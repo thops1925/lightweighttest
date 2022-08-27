@@ -19,8 +19,6 @@ const trending = [
         rating: ' 5.0',
 
     },
-
-
     {
         title: 'One Piece',
         category: 'Category: Adventure fiction, Comedy, Family',
@@ -43,8 +41,8 @@ const selectedEpisode = {
         category: 'The citizens worry they will be at the Titans mercy after many years of peace.',
         image: [titan4, titan5]
     }, {
-        title: 'Episode 2',
-        category: 'The citizens worry they will be at the Titans mercy after many years of peace.',
+        title: 'Episode 3',
+        category: 'Eren butt heads with Jean Kirschtein, a cadet who wants to be in the Military Police Regiment. Berholt and Reiner help Eren learn during training.',
         image: [titan6, titan7]
     }, {
         title: 'Episode 4',

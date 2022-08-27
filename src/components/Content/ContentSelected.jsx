@@ -3,7 +3,6 @@ import { selectedEpisode } from '../../constant'
 import './Content.scss'
 
 const ContentSelected = ({ trendingData }) => {
-
     const { episode } = selectedEpisode
     const [{ image }] = episode
     const [counter, setCounter] = useState(0);
@@ -16,7 +15,6 @@ const ContentSelected = ({ trendingData }) => {
     }, [counter, image.length])
     return (
         <section className='selected_container'>
-
             <div className='discover_grid_selected_selected'>
                 {[trendingData].map((item, index) => (
                     <div key={index} className='discover_item_selected'>
@@ -35,9 +33,7 @@ const ContentSelected = ({ trendingData }) => {
                             </div>
                         </div>
                     </div>
-
-                ))
-                }
+                ))}
                 {trendingData.title === selectedEpisode.title && (
                     <div className='discover_selected-description'>
                         {selectedEpisode.description}
