@@ -18,7 +18,6 @@ const ContentSelected = ({ trendingData }) => {
     }, [counter, image.length])
 
 
-    console.log(counter)
 
     return (
         <section className='selected_container'>
