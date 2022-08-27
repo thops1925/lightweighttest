@@ -37,19 +37,19 @@ const selectedEpisode = {
     episode: [{
         title: 'Episode 1',
         category: 'The citizens worry they will be at the Titans mercy after many years of peace.',
-        image: titan1,
+        image: [titan1, titan3]
     }, {
         title: 'Episode 2',
         category: 'The citizens worry they will be at the Titans mercy after many years of peace.',
-        image: titan5,
+        image: [titan4, titan5]
     }, {
         title: 'Episode 2',
         category: 'The citizens worry they will be at the Titans mercy after many years of peace.',
-        image: titan3,
+        image: [titan6, titan7]
     }, {
         title: 'Episode 4',
         category: 'The citizens worry they will be at the Titans mercy after many years of peace.',
-        image: titan4,
+        image: [titan8, titan9]
     },
     ]
 }

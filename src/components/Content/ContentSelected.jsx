@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { selectedEpisode } from '../../constant'
 import './Content.scss'
 
 const ContentSelected = ({ trendingData }) => {
-    console.log(selectedEpisode)
+
+    const { episode } = selectedEpisode
+    const [{ image }] = episode
+    const [counter, setCounter] = useState(0);
+
+
+    useEffect(() => {
+        setInterval(() => {
+            setCounter(counter + 1);
+        }, 2000)
+        if (counter >= image.length) {
+            setCounter(0);
+        }
+
+    }, [counter, image.length])
+
     return (
         <section className='selected_container'>
 
@@ -36,7 +51,7 @@ const ContentSelected = ({ trendingData }) => {
 
             <div className='episode_container'>
                 {trendingData.title === selectedEpisode.title && [selectedEpisode].map((item, index) => (
-                    <div className='episode_header'>
+                    <div key={index} className='episode_header'>
                         <div className='episode_title'>
                             <p className='episode_title-header'>Episode</p>
                             <p className='episode_title-header-tile'>{item.title}</p>
@@ -45,7 +60,8 @@ const ContentSelected = ({ trendingData }) => {
                             {item.episode.map((epi, index) => (
                                 <div key={index} className='epi_container'>
                                     <div className='epi_image'>
-                                        <img src={epi.image} alt={epi.title} />
+                                        <img src={epi.image[counter]} alt={epi.title} />
+
                                     </div>
                                     <div className='epi_text'>
                                         <p className='epi_title'>{epi.title}</p>
