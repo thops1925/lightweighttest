@@ -4,9 +4,11 @@ import './Content.scss'
 import { motion } from 'framer-motion'
 
 const ContentSelected = ({ trendingData }) => {
+
     const { episode } = selectedEpisode
     const [{ image }] = episode
     const [counter, setCounter] = useState(0);
+
     useEffect(() => {
         const myInterval = setInterval(() => {
             setCounter(() => counter + 1);
@@ -14,6 +16,7 @@ const ContentSelected = ({ trendingData }) => {
         if (counter >= image.length) setCounter(0);
         return () => clearInterval(myInterval);
     }, [counter, image.length])
+
     return (
         <section className='selected_container'>
             <div className='discover_grid_selected_selected'>
