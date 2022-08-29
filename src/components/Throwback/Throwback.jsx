@@ -3,6 +3,7 @@ import { throwback } from '../../constant'
 import './Throwback.scss'
 
 const Throwback = () => (
+
     <div className='throwback_container'>
         {throwback.map((item, index) => (
             <div key={index} className='throwback_item'>

@@ -4,10 +4,12 @@ import './Trending.scss'
 import { motion } from 'framer-motion'
 
 const Trending = ({ data }) => {
+
     const [trendingData, setTrendingData] = useState([]);
     const [open, setOpen] = useState(true)
     const selectTrendingData = (item) => setTrendingData(item);
     const slideOpen = () => setOpen(!open);
+
     return (
         <section className='discover_grid'>
             {open ? (
